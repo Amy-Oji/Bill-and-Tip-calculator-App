@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIP_CALCULATOR</title>
+    <link rel="stylesheet" href="tipcalc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+
+        <div class="left">
+            <h1>BILL</h1>
+            <div class="amount">
+                <p class="dollar">$</p>
+                <input type="number" class="amt initial-bill">
+                <!-- <p class="amt">142.55</p> -->
+            </div>
+            <h3>Select Tip %</h3>
+
+            <div class="btns">
+                <button class="five btn_tip">5%</button>
+                <button class="ten btn_tip">10%</button>
+                <button class="fifteen btn_tip">15%</button>
+                <button class="twenty-five btn_tip">25%</button>
+                <button class="fifty btn_tip">50%</button>
+                <input type="number" placeholder="Custom" id="custom">
+                <!-- <button id="custom">Custom</button> -->
+            </div>
+
+            <h3>Number of People</h3>
+
+            <div class="amount">
+                <p class="dollar"><img src="images/avatar.png" alt=""></p>
+                <input type="number" value= "1" class="amt no-of-persons" required>
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="display">
+                <p class="break"><span class="white">Tip Amount</span> <span class="grey">/ person</span></p>
+                <p class="amto total-tip-per-person">$0.00</p>
+            </div>
+
+            <div class="display">
+                <p class="break"><span class="white">Total</span> <span class="grey">/ person</span></p>
+                <p class="amto total-amount-per-person">$0.00</p>
+            </div>
+
+            <button class="reset">RESET</button>
+        </div>
+    </div>
+    <script src="tipcalc.js"></script>
+</body>
+</html>
